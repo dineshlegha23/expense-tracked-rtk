@@ -1,7 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const localData = JSON.parse(localStorage.getItem("transaction"));
+
 const initialState = {
-  allTransaction: [],
+  allTransaction: localData || [],
 };
 
 const transactionSlice = createSlice({
@@ -13,6 +15,7 @@ const transactionSlice = createSlice({
         ...action.payload,
         time: Date().toLocaleString(),
       });
+      localStorage.setItem("transaction", JSON.stringify(state.allTransaction));
     },
   },
 });
