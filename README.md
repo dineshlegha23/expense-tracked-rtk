@@ -1,6 +1,6 @@
 # React + Vite
 
-Site is live at : https://cart-rtk.netlify.app/
+Site is live at : https://site-expense-tracker.netlify.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
