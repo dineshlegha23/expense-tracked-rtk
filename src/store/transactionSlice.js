@@ -9,7 +9,10 @@ const transactionSlice = createSlice({
   initialState,
   reducers: {
     addTransaction: (state, action) => {
-      state.allTransaction.push({ ...action.payload });
+      state.allTransaction.push({
+        ...action.payload,
+        time: Date().toLocaleString(),
+      });
     },
   },
 });
