@@ -35,6 +35,7 @@ const TransactionList = () => {
                 key={index}
               >
                 <p>{item.description}</p>
+                <p>{item.time.slice(0, 24)}</p>
                 <p>${item.amount}</p>
               </li>
             ))}
