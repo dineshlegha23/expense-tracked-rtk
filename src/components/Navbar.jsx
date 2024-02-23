@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => setIsModalOpen(false)}
             className="absolute top-0 left-0 w-full h-screen bg-black/40"
           ></div>
-          <section className="fixed left-[50%] translate-x-[-50%] min-w-[400px] mx-auto bg-white rounded-md px-5 py-2">
+          <section className="fixed left-[50%] translate-x-[-50%] min-w-[400px] mx-auto bg-white rounded-md px-5 py-2 z-10">
             <div className="flex justify-between mb-5">
               <h2 className="cursor-default">Add New Transaction</h2>
               <button onClick={() => setIsModalOpen(false)}>X</button>
